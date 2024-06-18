@@ -13,7 +13,7 @@ const items = [
 export default function NavBar({ openCart }) {
   return (
     <>
-      <nav className="overflow-hidden fixed top-0 bg-stone-900 w-[100%] h-20 mb-20">
+      <nav className="overflow-hidden fixed z-10 top-0 bg-stone-900 w-[100%] h-20 mb-20">
         <ul className="  h-full items-center flex justify-center gap-10  text-slate-200 bg-stone-800">
           {items.map((i, ind) => (
             <List key={ind} title={i} />
